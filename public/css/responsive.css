@@ -1,0 +1,178 @@
+@media screen and (max-width: 720px){
+	.active a{
+	color: #000000!important;
+	border-bottom: 0;
+	}
+	.navbar-brand img{
+	width: 100px;
+	}
+
+	.header-cp h1 {
+	font-size: 30px;
+	}
+	
+	.header-cp h2 {
+		font-size: 20px;
+		color: #EDEDED;
+		font-family: 'Exo 2', sans-serif;
+
+	}
+	.header-area h2{
+		font-size: 20px;
+
+	}
+	
+	.bg-video {
+		margin-left: 0;
+	}
+	
+
+	.about-content{
+		margin-top: 100px;
+	}
+	.about-content h5{
+		font-size: 20px;
+	}
+	.about-content h3{
+		font-size: 30px;
+	}
+	.about-content span{
+		font-size: 30px;
+		
+	}
+	.about-content p{
+		font-size: 16px;
+		padding: 20px 20px 20px 0;
+		
+	}
+
+	.about-content a button{
+		margin-left: 5px;
+	}
+
+	#service{
+	padding: 50px 0;
+	}
+
+	.service p{
+	font-size: 16px;
+	}
+	.service h1{
+		padding: 30px 0;
+		padding-bottom: 10px;
+		font-size: 30px;
+	}
+
+
+	
+
+	.box{
+
+		margin: 0 -10px;
+		transition: .3s ease;
+		height: 450px;
+	}
+	#skill{
+	padding: 30px;
+	
+	}
+	
+	.skill h1{
+		font-size: 30px;
+	}
+	
+	
+	.progress-controll{ 
+		margin: 30px 0 0;
+	}
+	.progress-controll1{ 
+		margin: 10px 0 0;
+		
+	}
+
+	#price{
+	padding: 20px 0;
+	}
+	.price h1{
+		font-size: 30px;
+
+	}
+	.card-pa {
+		margin-top: 20px;
+	}
+	.card-padd{
+		padding-bottom: 20px;
+	}
+
+	.money{
+		font-size: 40px;
+		line-height: 1;
+		color: #ddd;
+	}
+	
+
+	.card:hover{
+		transform: translateY(-10px);
+	}
+	
+	
+	
+	.protfolio-title h1{
+		font-size: 30px;
+	}
+	
+	
+	.protfolio-nav{
+		padding:10px 0 30px;
+
+	}
+	.protfolio-nav ul{
+		margin: 0;
+		padding: 0;
+		display: block;
+		justify-content: left;
+		cursor: pointer;
+		flex-grow: 1,
+
+	}
+	.protfolio-nav ul li{
+		padding: 5px;
+		color: #333;
+		font-family: 'Exo 2', sans-serif;
+		position: relative;
+		font-size:13px;
+	}
+	.protfolio-nav ul li.mixitup-control-active{
+		color: #f7071b;
+	}
+
+	.protfolio-nav ul li:after{
+		display: none;
+	}
+	.counter h1{
+	font-size: 30px;
+
+	}
+	.contact h1{
+	font-size: 30px;
+	}
+	.top{
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+
+}
+.top a i{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+
+}
+	
+
+		
+	
+
+
+}

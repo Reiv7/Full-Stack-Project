@@ -1,0 +1,10 @@
+ compare 
+
+interface abstraction 
+Private protected
++-+
+Fake CPU usage 
+PowerCfg /SETACVALUEINDEX SCHEME_CURRENT SUB_PROCESSOR IDLEDISABLE 000
+
+PowerCfg /SETACTIVE SCHEME_CURRENT
+-+-
