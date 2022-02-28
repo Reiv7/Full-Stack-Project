@@ -16,13 +16,13 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        Model::unguard();
+    //     Model::unguard();
 
-        $this->call(PermissionsTableSeeder::class);
-        $this->call(RolesTableSeeder::class);
-        $this->call(ConnectRelationshipsSeeder::class);
-        //$this->call('UsersTableSeeder');
+    //     $this->call(PermissionsTableSeeder::class);
+    //     $this->call(RolesTableSeeder::class);
+    //     $this->call(ConnectRelationshipsSeeder::class);
+    //     //$this->call('UsersTableSeeder');
 
-    Model::reguard();
+    // Model::reguard();
     }
 }

@@ -13,23 +13,23 @@ class CreatePermissionUserTable extends Migration
      */
     public function up()
     {
-        $connection = config('roles.connection');
-        $table = config('roles.permissionsUserTable');
-        $permissionsTable = config('roles.permissionsTable');
-        $tableCheck = Schema::connection($connection)->hasTable($table);
-        $userTable = app(config('auth.providers.users.model'))->getTable();
+        // $connection = config('roles.connection');
+        // $table = config('roles.permissionsUserTable');
+        // $permissionsTable = config('roles.permissionsTable');
+        // $tableCheck = Schema::connection($connection)->hasTable($table);
+        // $userTable = app(config('auth.providers.users.model'))->getTable();
 
-        if (!$tableCheck) {
-            Schema::connection($connection)->create($table, function (Blueprint $table) use ($permissionsTable, $userTable) {
-                $table->increments('id')->unsigned();
-                $table->integer('permission_id')->unsigned()->index();
-                $table->foreign('permission_id')->references('id')->on($permissionsTable)->onDelete('cascade');
-                $table->unsignedBigInteger('user_id')->unsigned()->index();
-                $table->foreign('user_id')->references('id')->on($userTable)->onDelete('cascade');
-                $table->timestamps();
-                $table->softDeletes();
-            });
-        }
+        // if (!$tableCheck) {
+        //     Schema::connection($connection)->create($table, function (Blueprint $table) use ($permissionsTable, $userTable) {
+        //         $table->increments('id')->unsigned();
+        //         $table->integer('permission_id')->unsigned()->index();
+        //         $table->foreign('permission_id')->references('id')->on($permissionsTable)->onDelete('cascade');
+        //         $table->unsignedBigInteger('user_id')->unsigned()->index();
+        //         $table->foreign('user_id')->references('id')->on($userTable)->onDelete('cascade');
+        //         $table->timestamps();
+        //         $table->softDeletes();
+        //     });
+        // }
     }
 
     /**

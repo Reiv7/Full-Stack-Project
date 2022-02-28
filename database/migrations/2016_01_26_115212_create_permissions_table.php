@@ -13,21 +13,21 @@ class CreatePermissionsTable extends Migration
      */
     public function up()
     {
-        $connection = config('roles.connection');
-        $table = config('roles.permissionsTable');
-        $tableCheck = Schema::connection($connection)->hasTable($table);
+        // $connection = config('roles.connection');
+        // $table = config('roles.permissionsTable');
+        // $tableCheck = Schema::connection($connection)->hasTable($table);
 
-        if (!$tableCheck) {
-            Schema::connection($connection)->create($table, function (Blueprint $table) {
-                $table->increments('id')->unsigned();
-                $table->string('name');
-                $table->string('slug')->unique();
-                $table->string('description')->nullable();
-                $table->string('model')->nullable();
-                $table->timestamps();
-                $table->softDeletes();
-            });
-        }
+        // if (!$tableCheck) {
+        //     Schema::connection($connection)->create($table, function (Blueprint $table) {
+        //         $table->increments('id')->unsigned();
+        //         $table->string('name');
+        //         $table->string('slug')->unique();
+        //         $table->string('description')->nullable();
+        //         $table->string('model')->nullable();
+        //         $table->timestamps();
+        //         $table->softDeletes();
+        //     });
+        // }
     }
 
     /**
